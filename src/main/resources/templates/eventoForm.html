@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html lang="pt-br" xmlns:th="http://thymeleaf.org">
+<head>
+     <meta charset="utf-8">
+     <title>igreja Batista Vivo para Cristo</title>
+	
+	<link rel="icon" href="favicon.ico">
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+	
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+ 
+
+</head>
+<body>
+
+<div class="container">
+	<div class="row">
+			<div class="col-12 text-center my-5" >
+		 <h1 class="display-5"><i class="fas fa-edit text-primary"></i>&nbspFORMULARIO</h1> 
+			</div>
+	
+		<form  method="post" enctype="multipart/form-data">
+   	
+			<div class="form-group">
+				<label for="imagem">Imagem do Evento</label>
+				<input type="file" class="form-control"  name="fileEvento">
+			</div>
+		
+			   <div class="form-group">
+			  	<input type="text" class="form-control" name="data" placeholder="Data *">
+			   </div>
+						      
+			   <div  class="form-group">
+				<input type="text" class="form-control" name="hora" placeholder="Hora*">
+			   </div>
+			   
+			   
+			    <div  class="form-group">
+				<input type="text" class="form-control" name="local" placeholder="Local*">
+			   </div>
+			   
+			    <div  class="form-group">
+				<input type="text" class="form-control" name="nome" placeholder="Nome do Evento*">
+			   </div>
+						      
+			<!--<textarea id="summernote" type="text" class="form-control" name="texto" placeholder="Texto *"></textarea>
+			-->			      
+			     <small class="form-text text-muted">(*) Campo de preenchimento obrigatório</small>
+				 
+			 
+			 <button type="submit" class="btn btn-primary" style="margin-top:10px;">Enviar</button>  
+					   
+			  <a href="/eventos" class="btn btn-light" role="button" style="margin-top:10px;" >Cancelar</a>
+		 </form> 
+</div>
+ 
+
+
+
+<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js
+"></script>
+
+</body>
+</html>

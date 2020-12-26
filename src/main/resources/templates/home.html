@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://thymeleaf.org">
+<head>
+	<title>igreja Batista Vivo para Cristo</title>
+	
+	<link rel="icon" href="favicon.ico">
+	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+	
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary">
+ <div class="container">     
+  		<a class="navbar-brand mb-0" href="#"></a>
+    	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" 	 aria-expanded="false" aria-label="Toggle navigation">
+      		<span class="navbar-toggler-icon"></span>
+    	</button>
+    	<!-- Image and text -->
+				<nav class="navbar navbar-light bg-light">
+					<a class="navbar-brand" href="#"> <img src="imagem/batista.png" width=""
+						height="" class="d-inline-block align-top" alt="" loading="lazy">
+					</a>
+				</nav>
+    	
+    	<div class="collapse navbar-collapse" id="navbarNavDropdown">
+      		
+      		<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        		<li class="nav-item active">
+          			<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        		</li>
+				
+				 <li class="nav-item active">
+		          <a class="nav-link" href="#">Quem Somos</a>
+		        </li>
+		        
+		        <li class="nav-item active">
+		          <a class="nav-link" href="#">Departamentos</a>
+		        </li>
+				
+				 <li class="nav-item active">
+		          <a class="nav-link" href="http://localhost:8080/eventos" tabindex="-1" aria-disabled="true">Eventos</a>
+		        </li>
+		        
+		        <li class="nav-item active">
+		          <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contato</a>
+		        </li>
+
+		        <li class="nav-item">
+		          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+		        </li>
+      		</ul>
+
+      		<ul class="navbar-nav ml-auto"> 
+        	    <li class="nav-item dropdown active">
+          			 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Social
+     				 </a>
+        			<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          				<a class="dropdown-item" href="#">Facebook</a>
+          				<a class="dropdown-item" href="#">Twitter</a>
+          				<a class="dropdown-item" href="#">Instagran</a>
+        			</div>
+       			</li>
+      		</ul> 
+    	</div>
+    </div>	
+</nav>
+
+<!--   Carousel  -->
+
+     <div class="containerCarousel">
+		  	<div id="carouselSite" class="carousel slide" data-ride="carousel">
+		  		<ol class="carousel-indicators">
+		  			<li data-target="#carouselSite" data-slide-to="0" class="active"></li>
+		  			<li data-target="#carouselSite" data-slide-to="1" ></li>
+		  			<li data-target="#carouselSite" data-slide-to="2" ></li>
+		  			
+		  		</ol>
+
+				<div class="carousel-inner center-block">
+					<div class="carousel-item active" >
+						<img src="EBD.jpg" class="img-fluid d-block">
+						<div class="carousel-caption d-none d-md-block text-dark">
+						<h3>texto da imagem 01 do carousel</h3>						
+						<p class="leaad">A Égide era, na mitologia grega,</p>
+						</div>						
+					</div>
+
+					<div class="carousel-item">
+						<img src="Fox.jpg" class="img-fluid d-block">
+						<div class="carousel-caption d-none d-md-block text-dark">
+						<h3>texto da imagem 02 do carousel</h3>						
+						<p class="leaad">A Égide era, na mitologia grega,</p>
+						</div>			
+					</div>
+
+					<div class="carousel-item">
+						<img src="EBD.jpg" class="img-fluid d-block">
+						<div class="carousel-caption d-none d-md-block text-dark">
+						<h3>texto da imagem 03 do carousel</h3>						
+						<p class="leaad">Égide, para o que é indicado e para o que serve?</p>
+						</div>						
+					</div>
+
+					<a class="carousel-control-prev" href="#carouselSite" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon"></span>
+						<span class="sr-only">Anterior</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselSite" role="button" data-slide="next">
+						<span class="carousel-control-next-icon"></span>
+						<span class="sr-only">Avançar</span>
+					</a>
+
+			    </div>
+	        </div>
+	</div>
+
+
+<!--  Cards  -->
+
+    <div class="row mb-5">
+    	<div class="col-sm-4 my-5">
+    		<div class="card">
+    			<img class="card-img-top" src="imagem/amanhecer.jpg">
+    			<div class="card-body">
+    				<h4 class="card-title"> Título do card 01</h4>
+    				<h6 class="card-subtitle mb-2 text-muted"> Subtitulo do card 01 </h6>
+    				<p class="card-text ">Lorem Ipsum é simplesmente</p>
+    				<a href="#" class="card-link"data-toggle="modal" data-target="#siteModal1">O e-PWG afirma que existem diversos métodos para ...</a>
+    				<a href="#" class="card-link">Saiba mais... </a>
+    			</div>
+    		</div>
+    	</div>   
+    	<div class="col-sm-4 my-5">
+    		<div class="card">
+    			<img class="card-img-top" src="imagem/ebd.jpg">
+    			<div class="card-body">
+    				<h4 class="card-title"> Título do card 02</h4>
+    				<h6 class="card-subtitle mb-2 text-muted"> Subtitulo do card 02 </h6>
+    				<p class="card-text ">Lorem Ipsum é simplesmente</p>
+    				<a href="#" class="card-link" data-toggle="modal" data-target="#siteModal2">Um dia percebemos que as melhores provas...</a>
+    				<a href="#" class="card-link">Saiba mais... </a>
+    			</div>
+    		</div>
+    	</div>   
+    	<div class="col-sm-4 my-5">
+    		<div class="card">
+    			<img class="card-img-top" src="imagem/pordosol.jpg">
+    			<div class="card-body">
+    				<h4 class="card-title"> Título do card 03</h4>
+    				<h6 class="card-subtitle mb-2 text-muted"> Subtitulo do card 03 </h6>
+    				<p class="card-text">Lorem Ipsum é simplesmente</p>
+    				<a href="#" chttps://www.java.com/pt-BR/lass="card-link"  data-toggle="modal" data-target="#siteModal3">Não acredite em algo simplesmente porque ouviu...</a>
+    				<a href="https://www.java.com/pt-BR/" class="card-link">Saiba mais... </a>
+    			</div>
+    		</div>
+    	</div>    
+    </div>
+
+<!-- Jumbotron -->
+
+    <div class="jumbotron jumbotron-fluid" >
+		<div class="container">
+			<div class="row">
+				<div class="col-12 text-center">
+					<h1></h1>
+					<h1 class="display-5"> <i class="fas fa-video text-primary"></i>&nbspARQUITETURA DE SOFTWARE</h1>
+					<p class="lead">Testando Jumbotron </p>
+					<hr>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<ul class="nav nav-pills justify-content-center mb-4" id="pills-nav" role="tablist">
+						<li class="nav-item"> 
+							<a class="nav-link active"id="nav-pills-01" data-toggle="pill" href="#nav-item01">menu 01</a>
+						</li>	
+
+						<li class="nav-item"> 
+							<a class="nav-link"id="nav-pills-02" data-toggle="pill" href="#nav-item02">menu 02</a>
+						</li>
+
+						<li class="nav-item"> 
+							<a class="nav-link" id="nav-pills-03" data-toggle="pill" href="#nav-item03">menu 03</a>
+						</li>
+					</ul>
+					<div class="tab-content" id="nav-pills-content">
+						<div class="tab-pane fade show active" id="nav-item01" role="tabpanel">
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="embed-responsive embed-responsive-16by9">
+										<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6MXodnh_6YI"></iframe>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<p>A arquitetura é importante, na medida em que ela permite uma comunicação efetiva entre as partes interessadas, abrangendo a compreensão, negociação e consenso.Ademais, permite decisões tempestivas, i.e., possibilita correção e idação do sistema antes da plementação. Por fim, permite uma abstração reutilizável dosistema em situações diferentes com características similares.
+									A arquitetura é importante, na medida em que ela permite uma comunicação efetiva
+									entre as partes interessadas, abrangendo a compreensão, negociação e consenso.
+									Ademais, permite decisões tempestivas, i.e., possibilita correção e idação do
+									sistema antes da plementação. Por fim, permite uma abstração reutilizável do
+									sistema em situações diferentes com características similares
+									</p>
+								</div>
+								
+							</div>
+						</div>
+
+						<div class="tab-pane fade" id="nav-item02" role="tabpanel">
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="embed-responsive embed-responsive-16by9">
+										<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2zToEPpFEN8"></iframe>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<p>AGalera, uma forma de organizar a rquitetura de um sistema complexo em partes
+									   lização de amadas de ftware. Seguindo essa menores é or eio da abordagem, cada camada corresponderá a um conjunto de funcionalidades de um sistema de software – sendo que as funcionalidades de alto nível dependerão das
+									   funcionalidades de baixo nível.A separação em camadas fornece um nível de abstração através do agrupamento lógico de subsistemas relacionados entre si. Parte-se o rincípio de ue s camadas de bstração mais altas devem depender das camadas de bstração baixas. Portanto, isso permite que o sistema de software seja mais portável e modificável.
+									</p>
+								</div>
+								
+							</div>
+						</div>
+
+						<div class="tab-pane fade" id="nav-item03" role="tabpanel">
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="embed-responsive embed-responsive-16by9">
+										<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VeWIHtxOGww"></iframe>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<p>Funções do quiteto e oftware: priorizar casos de uso; análise arquitetural;
+									construir prova de conceito arquitetural; estruturar o modelo de implementação;
+									incorporar elementos de design; descrever a distribuição; identificar mecanismos de
+									design; desenvolver guia de programação; identificar elementos de design;
+									descrever a arquitetura em tempo de execução; desenvolver guia de design.
+									Funções do quiteto e oftware: priorizar casos de uso; análise arquitetural;
+									construir prova de conceito arquitetural; estruturar o modelo de implementação;
+									incorporar elementos de design; descrever a distribuição; identificar mecanismos de
+									design; desenvolver guia de programação; identificar elementos de design;
+									descrever a arquitetura em tempo de execução; desenvolver guia de design.
+									</p>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div> 
+
+ <!-- modal -->
+
+    <div class="modal fade" id="siteModal1" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+								
+				<div class="modal-header">
+					<h5 class="modal-title"> titulo do meu modal 1 </h5>
+					<button type="button" class="close" data-dismiss="modal">
+						<span>&times;</span>
+					</button>
+				</div>	
+
+				<div class="modal-body">
+					<p>A Cartilha Padrões Web em Governo Eletrônico, e-PWG, fornece recomendações de boas práticas na área digital, com o objetivo de aprimorar a comunicação, o fornecimento de informações e serviços prestados por meios eletrônicos pelos órgãos do Governo Federal.
+					O objetivo da cartilha é oferecer subsídios para a concepção, desenvolvimento, manutenção e administração de sítios de governo eletrônico na esfera federal. O Guia também fornece subsídios para a contratação de empresas e descrição dos papéis e conhecimentos necessários para as equipes envolvidas com o sítio, sendo concebido para ser prático e de fácil consulta.
+					</p>
+				</div>
+
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Sair</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="modal fade" id="siteModal2" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+								
+				<div class="modal-header">
+					<h5 class="modal-title"> titulo do meu modal </h5>
+					<button type="button" class="close" data-dismiss="modal">
+						<span>&times;</span>
+					</button>
+				</div>	
+
+				<div class="modal-body">
+					<p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.
+					</p>
+				</div>
+
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Sair</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="siteModal3" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+								
+				<div class="modal-header">
+					<h5 class="modal-title"> titulo do meu modal 3 </h5>
+					<button type="button" class="close" data-dismiss="modal">
+						<span>&times;</span>
+					</button>
+				</div>	
+
+				<div class="modal-body">
+					<p>O HTTP é um tipo de protocolo de comunicação usado em aplicações web, além disso aplicações web também podem ser desenvolvidas usando XML ou linguagens de programação como PHP ou Java, por exemplo.
+					</p>
+				</div>
+
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Sair</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+<!-- Formulario -->
+
+	<div class="container">
+		<div class="row">
+			<div class="col-12 text-center my-5" >
+		 <h1 class="display-5"><i class="fas fa-edit text-primary"></i>&nbspFORMULARIO</h1> 
+			</div>
+
+		</div>
+		<div class="row justify-content-center mb-5">
+			<div class="col-sm-12 col-md-10 col-lg-8">
+				<form>
+					<div class="form-row"> 
+						<div class="form-group col-sm-6">
+							<label for="inputNome">Seu nome</label>
+							<input type="text" class="form-control" id="inputName" placeholder="Nome">
+						</div>
+
+						<div class="form-group col-sm-6">
+							<label for="inputSobrenome">Seu sobrenome</label>
+							<input type="text" class="form-control" id="inputSobrenome" placeholder="Sobrenome">
+						</div>
+
+						<div class="form-group col-sm-12">
+							<label for="inputEnd"> Seu endereço</label>
+							<input type="text" class="form-control" id="inputEnd" placeholder="endereço completo">
+						</div>
+
+						
+
+						<div class="form-group col-sm-4">
+							<label for="inputEstado">Seu estado</label>
+							<select id="inputEstado" class="form-control">
+								<option selected="Escolha..."></option>
+								<option>...</option>
+								<option>...</option>
+								<option>...</option>
+								<option>...</option>
+							</select>
+						</div>
+
+						<div class="form-group col-sm-4">
+							<label for="inputCidade"> Sua cidade </label>
+							<input type="text" class="form-control"  id="inputCidade" placeholder="Cidade">
+						</div>
+
+						<div class="form-group col-sm-4">
+							<label for="inputCep">Seu CEP</label>
+							<input type="text"  class="form-control" id="inputCep" placeholder="CEP">
+						</div>
+					</div>
+
+					<div class="form-row">
+						<div class="form-group col-sm-12">
+							<div class="form-check">
+								<label class="form-check-label">
+									<input class="form-check-input" type="checkbox"> Desejo receber novidades por e-mail.
+								</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-row">
+						<div class="col-sm-12">
+							<button type="submit" class="btn btn-primary">Enviar</button>
+						</div>
+					</div>
+				</form>
+				
+			</div>
+		</div>
+
+	</div>
+
+<!-- footer -->
+
+<div class="row">
+	<div class="col-12 mb-3"></div>
+		<div class="col-sm-4">
+			<h3>curso</h3>
+			<p>vamos falar sobre sistemas, arquitetura e aplicações de dispositivos móveis.
+			A popularização dos smartphones desencadeou uma revolução no mercado de
+			telefonia móvel.</p>
+			<p>A evolução da tecnologia dos aparelhos celulares permitiu oferecer
+			   ao usuário recursos que vão muito além da realização de uma chamada ou do envio
+			   de uma mensagem.
+			</p>
+		</div>
+
+		<div class="col-sm-4">
+			<h3>Menu</h3>
+			 <div class="list-group">
+			 	<a href="#"class="list-group-item list-group-item-action list-group-item-primary">Perfil</a>
+			 	<a href="#"class="list-group-item list-group-item-action list-group-item-primary">Serviços</a>
+			 	<a href="#"class="list-group-item list-group-item-action list-group-item-primary">Depoimentos</a>
+			 	<a href="#"class="list-group-item list-group-item-action list-group-item-primary">Contato</a>
+			 </div>
+		</div>
+
+		<div class="col-sm-4">
+			<h3>Social</h3>
+			<div class="btn btn-group-vertical btn-block btn-group-lg" role="group">
+				<a class="btn btn-outline-primary" href="#"><i class="fab fa-facebook-square"></i>Facebook</a>
+				<a class="btn btn-outline-info" href="#"><i class="fab fa-twitter"></i>Twitter</a>
+				<a class="btn btn-outline-warning" href="#"><i class="fab fa-instagram"></i>Instagran</a>
+				<a class="btn btn-outline-primary" href="#">e-mail</a>
+
+			</div>
+		</div> 
+</div>	
+	
+	
+	
+	
+<!--  FOOTER -->
+
+
+<footer class="bg-light text-center text-lg-start">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Footer text</h5>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+          molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
+          aliquam voluptatem veniam, est atque cumque eum delectus sint!
+        </p>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Footer text</h5>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+          molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
+          aliquam voluptatem veniam, est atque cumque eum delectus sint!
+        </p>
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+  	<i class="fas fa-copyright"></i> Made with <i class="fas fa-heart"></i>& <i class="fas fa-mug-hot"></i>&nbsp in Planaltina, Distrito Federal.Brasil 
+  </div>
+  <!-- Copyright -->
+</footer>
+
+
+<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js
+"></script>
+
+</body>
+</html>
