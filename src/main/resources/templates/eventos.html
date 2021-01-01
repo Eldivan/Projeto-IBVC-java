@@ -1,50 +1,32 @@
 <!DOCTYPE html>
 <html xmlns:th="http://thymeleaf.org">
-<head>
-	<title>igreja Batista Vivo para Cristo</title>
-	
-	<link rel="icon" href="favicon.ico">
+<head th:replace="fragments :: html_head"> </head>
 
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/estilo.css"/>
-	
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	
-	
-</head>
 <body>
-	 <nav>
-          <object width="100%" height="100%" data="menu"></object>
-     </nav>
+	 
+	<div th:replace="fragments :: menu"></div>
+
+	
+ <div class="Container" style="padding-top:100px;">		
   <header>
 		<!-- Just an image -->
 		  <nav class="navbar navbar-light bg-light">
-		    <span class="navbar-brand mb-0 h1" style="font-weight:bold;" >IBVC</span>
+		    <span class="navbar-brand   mb-0 h1" style="font-weight:bold;" >IBVC</span>
             </a>
             <a href="/novoevento" class="btn btn-info"> Novo Evento </a>
          </nav>      
-    </header>          
-	
-
-
-
-   <div class="Container" style="margin-left:20%; width:60%; padding-bottom:30px;">		
-	 <div class="card" style="width: 40rem;">
-		 <img src="EBD.jpg" class="card-img-top" alt="...">
-		 <div class="card-body">
-		   
-		  
+  </header>          
+</div>	
+	   
+		<div class="container">
 		   <div class="card shadow-sm bg-white rounded" style="margin-top:20px;" th:each="event : ${evento}">
   					<div class="card-body">
-  						<p class="card-subtitle mb-2 text-muted" style="font-size: 2rem;">
-  						
-  					 
-  							<label>Imagem:</label>
+  						<p class="card-subtitle mb-2 text-muted" style="font-size:2rem;">
+  							<label></label>
   							<span>
-  								<img alt="imagem" th:src="|/imagem/${id}|"/>
+  							 	<img alt="imagem" style="margin-left:20%;" th:src="|/imagemevento/${event.id}|"/> 
   							</span>
   							<br>
-  						 	
   						    <label>Evento:</label>
   							<span th:text="${event.nome}"></span>
   							<br>
@@ -59,15 +41,13 @@
   						</p>		
   					</div>
 				</div>
-	  	</div>
-	</div>
-  </div>
+	  	   	</div>
+	
 
 
 <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js
-"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
 
 
 </body>

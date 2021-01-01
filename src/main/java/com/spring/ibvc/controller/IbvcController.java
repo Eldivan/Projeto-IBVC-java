@@ -69,7 +69,7 @@ public class IbvcController {
 		 return "redirect:/eventos";
 	}
 	
-		@GetMapping("/imagem/{id}")
+		@GetMapping("/imagemevento/{id}")
 		@ResponseBody
 		public byte[] exibirImagem (@PathVariable("id")long id){
 			Evento evento = this.ibvcService.findById(id);
