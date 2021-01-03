@@ -62,6 +62,7 @@ public class IbvcController {
 			}
 		
 		if (result.hasErrors()) {
+			attributes.addFlashAttribute("mensagem", "Campos obrigatorios devem ser preenchidos.");
 			return "redirect:/novoevento";
 		}
 		

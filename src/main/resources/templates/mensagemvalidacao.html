@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt" xmlns:th="http://thymeleaf.org">
+<head>
+	<title></title>
+
+</head>
+<body>
+	<div class="alert alert-danger alert-dimissible" role="alert" th:if="${not #strings.isEmpty(mensagem)}">	
+	  	<span th:text="${mensagem}"></span>
+	</div> 
+       
+
+</body>
+
+<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js
+"></script>
+
+</html>

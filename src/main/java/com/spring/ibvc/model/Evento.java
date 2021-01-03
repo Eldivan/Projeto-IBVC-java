@@ -8,6 +8,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Lob;
 import javax.persistence.Table;
+import javax.validation.constraints.NotBlank;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
@@ -21,17 +22,17 @@ public class Evento {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private long id;
 	
-	@NotNull
+	@NotBlank
 	private String nome;
 	
-	@NotNull
+	@NotBlank
 	private String local;
 	
 	
 	@DateTimeFormat(pattern = "dd/MM/yyyy")
     private Date data;
 	
-	@NotNull
+	@NotBlank
 	private String hora;
 	
 	@Lob
