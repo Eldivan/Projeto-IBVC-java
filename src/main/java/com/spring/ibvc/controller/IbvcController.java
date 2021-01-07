@@ -1,16 +1,18 @@
 package com.spring.ibvc.controller;
 
 import java.io.IOException;
+import java.lang.ProcessBuilder.Redirect;
 import java.util.List;
 
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -64,8 +66,7 @@ public class IbvcController {
 		if (result.hasErrors()) {
 			attributes.addFlashAttribute("mensagem", "Campos obrigatorios devem ser preenchidos.");
 			return "redirect:/novoevento";
-		}
-		
+		} 
 		 ibvcService.save(evento);
 		 return "redirect:/eventos";
 	}
@@ -77,4 +78,33 @@ public class IbvcController {
 			return evento.getImagem();
 		}
 	
+		
+		
+		@GetMapping("/editarevento/{id}")
+		public ModelAndView editarEvento(@PathVariable("id") Long id ){
+			
+			ModelAndView mv = new ModelAndView();
+			mv.setViewName("/editarevento");
+			
+			Evento evento = ibvcService.findById(id);
+			mv.addObject("evento" , evento);
+		   return mv;
+		}
+		
+		@PostMapping("/editarevento")
+		public ModelAndView editarevento(Evento evento) {
+			ModelAndView mv = new ModelAndView();
+			ibvcService.save(evento);
+			mv.setViewName("redirect:/eventos");
+			return mv;
+		}	
+		
+		
+		
+		@GetMapping("/excluirevento/{id}")
+		public String excluirEvento(@PathVariable("id") Long id ){
+			
+			ibvcService.deleteById(id);
+		   return "redirect:/eventos";
+		}
 }

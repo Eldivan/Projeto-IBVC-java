@@ -12,8 +12,8 @@
 		<!-- Just an image -->
 		  <nav class="navbar navbar-light bg-light">
 		    <span class="navbar-brand   mb-0 h1" style="font-weight:bold;" >IBVC</span>
-            </a>
-            <a href="/novoevento" class="btn btn-info"> Novo Evento </a>
+          
+            <a href="/novoevento" class="btn btn-info" > Novo Evento </a>
          </nav>      
   </header>          
 </div>	
@@ -21,11 +21,12 @@
 		<div class="container">
 		   <div class="card shadow-sm bg-white rounded" style="margin-top:20px;" th:each="event : ${evento}">
   					<div class="card-body">
-  						<p class="card-subtitle mb-2 text-muted" style="font-size:2rem;">
+  						<p class="card-subtitle mb-2 text-muted" style="font-size:1rem;">
   							<label></label>
   							<span>
   							 	<img alt="imagem" style="margin-left:20%;" th:src="|/imagemevento/${event.id}|"/> 
   							</span>
+  							
   							<br>
   						    <label>Evento:</label>
   							<span th:text="${event.nome}"></span>
@@ -38,17 +39,17 @@
   							<br>
   							<label>Hora:</label>
   							<span th:text="${event.hora}"></span>
-  						</p>		
-  					</div>
+  						</p>
+  						
+  						<a class="btn btn-warning" th:href="@{editarevento/{id}(id=${event.id})}"> Editar </a>
+  					 	<a class="btn btn-danger"th:href="@{excluirevento/{id}(id=${event.id})}"> Excluir </a>  
+  						</div>
 				</div>
 	  	   	</div>
 	
+	
+	
 	<div th:replace="fragments :: footer"></div>
-
-<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
-
 
 </body>
 </html>

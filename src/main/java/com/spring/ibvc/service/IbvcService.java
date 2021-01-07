@@ -9,6 +9,8 @@ public interface IbvcService {
 	List<Evento>findAll();
 	Evento findById(Long id);
 	Evento save(Evento evento);
+	Evento deleteById(Long id);
 	
 	
+		
 }

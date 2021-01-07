@@ -33,4 +33,13 @@ public class IbvcServiceImpl implements IbvcService {
 		return ibvcRepository.save(evento);	
 	}
 
+	@Override
+	public Evento deleteById(Long id) {
+		ibvcRepository.deleteById(id);
+		return null;
+	}
+
+	
+	
+	
 }
