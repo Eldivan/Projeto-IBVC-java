@@ -17,7 +17,7 @@
          </nav>      
   </header>          
 </div>	
-	   
+	   <th:block th:include="mensagemvalidacao"></th:block>
 		<div class="container">
 		   <div class="card shadow-sm bg-white rounded" style="margin-top:20px;" th:each="event : ${evento}">
   					<div class="card-body">
@@ -44,6 +44,7 @@
   						<a class="btn btn-warning" th:href="@{editarevento/{id}(id=${event.id})}"> Editar </a>
   					 	<a class="btn btn-danger"th:href="@{excluirevento/{id}(id=${event.id})}"> Excluir </a>  
   						</div>
+  						 
 				</div>
 	  	   	</div>
 	

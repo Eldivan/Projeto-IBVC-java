@@ -59,7 +59,7 @@ public class IbvcController {
 			try {
 				evento.setImagem(file.getBytes());
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
+				
 				e.printStackTrace();
 			}
 		
@@ -67,7 +67,10 @@ public class IbvcController {
 			attributes.addFlashAttribute("mensagem", "Campos obrigatorios devem ser preenchidos.");
 			return "redirect:/novoevento";
 		} 
-		 ibvcService.save(evento);
+		 ibvcService.save(evento); 
+		 
+		 attributes.addFlashAttribute("mensagem", "Cadastrado com sucesso!!!.");
+		 
 		 return "redirect:/eventos";
 	}
 	
@@ -92,8 +95,14 @@ public class IbvcController {
 		}
 		
 		@PostMapping("/editarevento")
-		public ModelAndView editarevento(Evento evento) {
+		public ModelAndView editarevento(Evento evento, @RequestParam("fileEvento")MultipartFile file) {
 			ModelAndView mv = new ModelAndView();
+			try {
+				evento.setImagem(file.getBytes());
+			} catch (IOException e) {
+				
+				e.printStackTrace();
+			}
 			ibvcService.save(evento);
 			mv.setViewName("redirect:/eventos");
 			return mv;
