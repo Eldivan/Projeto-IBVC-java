@@ -69,7 +69,7 @@ public class IbvcController {
 		} 
 		 ibvcService.save(evento); 
 		 
-		 attributes.addFlashAttribute("mensagem", "Cadastrado com sucesso!!!.");
+		 attributes.addFlashAttribute("msg", "Cadastrado com sucesso!!!.");
 		 
 		 return "redirect:/eventos";
 	}

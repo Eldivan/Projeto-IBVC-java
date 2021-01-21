@@ -42,11 +42,30 @@
   						</p>
   						
   						<a class="btn btn-warning" th:href="@{editarevento/{id}(id=${event.id})}"> Editar </a>
-  					 	<a class="btn btn-danger"th:href="@{excluirevento/{id}(id=${event.id})}"> Excluir </a>  
-  						</div>
+  					<!--   	<a class="btn btn-danger"th:href="@{excluirevento/{id}(id=${event.id})}"> Excluir </a> -->
+  					 	
+  					 	
+  					 <button type="button" class="btn btn-danger"  data-toggle="modal" data-target="#confirm">Excluir</button>
+
+						<div class="modal fade" id="confirm" role="dialog">
+						  <div class="modal-dialog modal-md">
+						
+						    <div class="modal-content">
+						      <div class="modal-body">
+						            <p> Deseja realmente excluir o registro ?</p>
+						      </div>
+							      <div class="modal-footer">
+							        <a th:href="@{excluirevento/{id}(id=${event.id})}" type="button" class="btn btn-danger" id="delete">SIM</a>
+							        <button type="button" data-dismiss="modal" class="btn btn-success">Cancelar</button>
+							      </div>
+						    </div>
+						
+						  </div>
+						</div>
+  					 </div>	
   						 
 				</div>
-	  	   	</div>
+	  	   
 	
 	
 	

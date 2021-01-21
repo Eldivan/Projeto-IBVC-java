@@ -12,8 +12,6 @@ import javax.validation.constraints.NotBlank;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
-import com.sun.istack.NotNull;
-
 @Entity
 @Table(name="evento")
 public class Evento {
